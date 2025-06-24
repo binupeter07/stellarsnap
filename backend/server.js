@@ -11,7 +11,7 @@ const nasaRoutes = require("./src/routes/nasaRoutes");
 const app = express();
 
 // Define port
-const PORT = 5000; // Hardcoded default
+const PORT = process.env.PORT || 5000; // Hardcoded default
 
 // Middlewares
 app.use(helmet()); // Security headers
